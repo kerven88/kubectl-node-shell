@@ -23,7 +23,7 @@ kubectl node-shell <node> -- echo 123
 # Use stdin
 cat /etc/passwd | kubectl node-shell <node> -- sh -c 'cat > /tmp/passwd'
 
-# Run oneliner
+# Run oneliner script
 kubectl node-shell <node> -- sh -c 'cat /tmp/passwd; rm -f /tmp/passwd'
 ```
 
